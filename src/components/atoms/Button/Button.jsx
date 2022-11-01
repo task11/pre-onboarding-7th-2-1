@@ -6,13 +6,13 @@ import { SIZES, TYPES, VARIANTS } from './Button.variant';
 
 export default function Button(props) {
   const { type, onClick, children, size, variant, disabled, isActive } = props;
-  const sizeStyle = SIZES[size];
+  const sizestyle = SIZES[size];
   const variantStyle = VARIANTS[variant];
 
   return (
     <StyledButton
       type={type}
-      sizeStyle={sizeStyle}
+      sizestyle={sizestyle}
       variantStyle={variantStyle}
       onClick={onClick}
       disabled={disabled}

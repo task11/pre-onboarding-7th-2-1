@@ -8,12 +8,12 @@ export const TYPES = {
 
 export const SIZES = {
   sm: css`
-    --button-font-size: 1.2rem;
+    --button-font-size: 12px;
     --button-padding: 4px 14px 3px 15px;
     --button-radius: 42px;
   `,
   md: css`
-    --button-font-size: 1.4rem;
+    --button-font-size: 14px;
     --button-padding: 5px 18px;
     --button-radius: 62px;
   `
@@ -21,15 +21,15 @@ export const SIZES = {
 
 export const VARIANTS = {
   default: css`
-    --button-color: #000000;
-    --button-bg-color: #D9D9D9;
+    --button-color: ${(props) => props.theme.textColor.default};
+    --button-bg-color: ${(props) => props.theme.btnColor.default};
   `,
   active: css`
-    --button-color: #FFFFFF;
-    --button-bg-color: #000000;
-    `,
+    --button-color: ${(props) => props.theme.textColor.accent};
+    --button-bg-color: ${(props) => props.theme.btnColor.active};
+  `,
   new: css`
-    --button-color: #FFFFFF;
-    --button-bg-color: #0094FF;
+    --button-color: ${(props) => props.theme.textColor.accent};
+    --button-bg-color: ${(props) => props.theme.btnColor.accent};
   `
 };
