@@ -27,7 +27,7 @@ Button.defaultProps = {
   type: TYPES.BUTTON,
   variant: VARIANTS.default,
   size: SIZES.md,
-  onClick: () => { },
+  onClick: () => {},
   disabled: false,
   isActive: true
 };

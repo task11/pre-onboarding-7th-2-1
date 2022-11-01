@@ -11,12 +11,18 @@ const StyledButton = styled.button`
   padding: var(--button-padding, 5px 18px);
   border-radius: var(--button-radius, 64px);
   color: var(--button-color, ${(props) => props.theme.textColor.default});
-  background: var(--button-bg-color, ${(props) => props.theme.btnColor.default});
+  background: var(
+    --button-bg-color,
+    ${(props) => props.theme.btnColor.default}
+  );
 
   &:disabled {
     cursor: default;
     opacity: 0.5;
-    background: var(--button-bg-color, ${(props) => props.theme.btnColor.default});
+    background: var(
+      --button-bg-color,
+      ${(props) => props.theme.btnColor.default}
+    );
   }
 `;
 
