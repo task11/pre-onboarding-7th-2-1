@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   * {
     box-sizing: border-box;
-    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   a {
     text-decoration: none;

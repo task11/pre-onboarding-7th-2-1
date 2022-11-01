@@ -1,25 +1,22 @@
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
-  ${(p) => p.sizeStyle}
-  ${(p) => p.variantStyle}
+  ${(props) => props.sizeStyle}
+  ${(props) => props.variantStyle}
+  ${(props) => props.isActive && 'cursor: pointer'};
   margin: 0;
   border: none;
-  cursor: pointer;
-  font-size: var(--button-font-size, 1rem);
-  padding: var(--button-padding, 12px 16px);
-  border-radius: var(--button-radius, 8px);
-  color: var(--button-color, #ffffff);
-  background: var(--button-bg-color, #0d6efd);
-  &:active,
-  &:hover,
-  &:focus {
-    background: var(--button-hover-bg-color, #025ce2);
-  }
+  font-weight: 700;
+  font-size: var(--button-font-size, 1.4rem);
+  padding: var(--button-padding, 5px 18px);
+  border-radius: var(--button-radius, 64px);
+  color: var(--button-color, #000000);
+  background: var(--button-bg-color, #D9D9D9);
+  
   &:disabled {
     cursor: default;
     opacity: 0.5;
-    background: var(--button-bg-color, #025ce2);
+    background: var(--button-bg-color, #D9D9D9);
   }
 `;
 

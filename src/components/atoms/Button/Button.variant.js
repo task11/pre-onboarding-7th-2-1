@@ -7,14 +7,29 @@ export const TYPES = {
 };
 
 export const SIZES = {
-  sm: css``,
-  md: css``,
-  lg: css``
+  sm: css`
+    --button-font-size: 1.2rem;
+    --button-padding: 4px 14px 3px 15px;
+    --button-radius: 42px;
+  `,
+  md: css`
+    --button-font-size: 1.4rem;
+    --button-padding: 5px 18px;
+    --button-radius: 62px;
+  `
 };
 
 export const VARIANTS = {
-  default: css``,
-  success: css``,
-  error: css``,
-  warning: css``
+  default: css`
+    --button-color: #000000;
+    --button-bg-color: #D9D9D9;
+  `,
+  active: css`
+    --button-color: #FFFFFF;
+    --button-bg-color: #000000;
+    `,
+  new: css`
+    --button-color: #FFFFFF;
+    --button-bg-color: #0094FF;
+  `
 };
