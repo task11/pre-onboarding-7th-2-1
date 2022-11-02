@@ -31,5 +31,8 @@ export const VARIANTS = {
   new: css`
     --button-color: ${(props) => props.theme.textColor.accent};
     --button-bg-color: ${(props) => props.theme.btnColor.accent};
+    --button-position: absolute;
+    --button-top: 8px;
+    --button-right: 7px;
   `
 };

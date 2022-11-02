@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 import { IoMdArrowBack } from '@react-icons/all-files/io/IoMdArrowBack';
+import { Link } from 'react-router-dom';
 
-const StyledBackButton = styled(IoMdArrowBack)`
+export const StyledBackButton = styled(IoMdArrowBack)`
   ${(props) => props.sizestyle}
 
   position: absolute;
@@ -14,4 +15,8 @@ const StyledBackButton = styled(IoMdArrowBack)`
   cursor: pointer;
 `;
 
-export default StyledBackButton;
+export const StyledLink = styled(Link)`
+  &:visited {
+    color: ${(props) => props.theme.textColor.default};
+  }
+`;
