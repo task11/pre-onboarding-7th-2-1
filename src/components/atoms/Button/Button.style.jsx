@@ -7,6 +7,9 @@ const StyledButton = styled.button`
   margin: 0;
   border: none;
   font-weight: 700;
+  position: var(--button-position, static);
+  top: var(--button-top);
+  right: var(--button-right);
   font-size: var(--button-font-size, 14px);
   padding: var(--button-padding, 5px 18px);
   border-radius: var(--button-radius, 64px);

@@ -13,7 +13,14 @@ export function formatDate(string) {
     day: 'numeric'
   };
 
-  const data = new Date(string).toLocaleDateString('ko-KR', options).split(' ');
+  const date = new Date(string).toLocaleDateString('ko-KR', options).split(' ');
+  console.log(date);
+  return `${date[0]} ${date[1]} (${date[2][0]})`;
+}
 
-  return `${data[0]} ${data[1]} (${data[2][0]})`;
+export function diffDate(string) {
+  const now = new Date();
+  const date = new Date(string);
+
+  return Math.ceil((date.getTime() - now.getTime()) / (1000 * 3600 * 24)) <= 1;
 }
