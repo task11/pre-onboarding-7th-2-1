@@ -1,5 +1,6 @@
 import React from 'react';
-import Atoms from '../../atoms';
+
+import Atoms from '../atoms';
 
 export default function Info(props) {
   const { children } = props;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Atoms from '../../atoms';
+import Atoms from '../atoms';
 
 export default function ListItem(props) {
   const { left, right } = props;

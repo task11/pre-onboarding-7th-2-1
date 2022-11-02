@@ -1,8 +1,8 @@
-import ListHeader from './ListHeader/ListHeader';
-import ListItem from './ListItem/ListItem';
-import ListTitle from './ListTitle/ListTitle';
-import Info from './Info/Info';
-import CardTitle from './CardTitle/CardTitle';
+import ListHeader from './ListHeader';
+import ListItem from './ListItem';
+import ListTitle from './ListTitle';
+import Info from './Info';
+import CardTitle from './CardTitle';
 
 export default {
   ListHeader,
