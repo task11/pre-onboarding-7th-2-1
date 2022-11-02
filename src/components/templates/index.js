@@ -1,5 +1,5 @@
-import Home from './Home/Home';
-import Detail from './Detail/Detail';
+import Home from './Home';
+import Detail from './Detail';
 
 export default {
   Home,
