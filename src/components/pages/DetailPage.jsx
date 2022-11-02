@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import React from 'react';
 
-import { useCarDispatch, useCarSelector } from '../../context/CarProvider';
+import useSetCarDetail from '../../utils/hooks/useSetCarDetail';
 
 import { FUELTYPE, SEGMENT } from '../../utils/constants/constants';
 
@@ -17,22 +16,7 @@ import Organisms from '../organisms';
 import Templates from '../templates';
 
 export default function Detail() {
-  const { detailId } = useParams();
-  const dispatch = useCarDispatch();
-  const { carDetail } = useCarSelector();
-  const [isLoading, setIsLoading] = useState(false);
-
-  useEffect(() => {
-    setIsLoading(false);
-    dispatch({
-      type: 'setCarDetail',
-      payload: {
-        detailId
-      }
-    });
-    setIsLoading(true);
-    console.log(carDetail);
-  }, []);
+  const { carDetail, isLoading } = useSetCarDetail();
 
   return (
     <>
@@ -61,14 +45,15 @@ export default function Detail() {
             right={`${formatDate(carDetail.startDate)} 부터`}
           />
           <Molecules.ListHeader>보험</Molecules.ListHeader>
-          {carDetail.insurance.map(({ name, description }) => (
-            <Molecules.ListItem left={name} right={description} />
+          {carDetail.insurance.map(({ name, description }, idx) => (
+            <Molecules.ListItem key={idx} left={name} right={description} />
           ))}
           {checkLength(carDetail.additionalProducts) && (
             <>
               <Molecules.ListHeader>추가상품</Molecules.ListHeader>
-              {carDetail.additionalProducts.map(({ name, amount }) => (
+              {carDetail.additionalProducts.map(({ name, amount }, idx) => (
                 <Molecules.ListItem
+                  key={idx}
                   left={name}
                   right={`월 ${addCommas(amount)}원`}
                 />
