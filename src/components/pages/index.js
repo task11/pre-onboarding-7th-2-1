@@ -1,5 +1,5 @@
-import HomePage from './HomePage/HomePage';
-import DetailPage from './DetailPage/DetailPage';
+import HomePage from './HomePage';
+import DetailPage from './DetailPage';
 
 export default {
   HomePage,

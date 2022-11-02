@@ -1,9 +1,12 @@
 import React from 'react';
 
+import { FUELTYPE, SEGMENT } from '../../utils/constants/constants';
+import { addCommas } from '../../utils/constants/useful-functions';
+
 import Atoms from '../atoms';
 
 export default function CardTitle(props) {
-  const { brand, name, classType, fuelType, amount } = props;
+  const { brand, name, segment, fuelType, amount } = props;
 
   return (
     <Atoms.CardTitleLayout
@@ -16,12 +19,12 @@ export default function CardTitle(props) {
       description={
         <>
           <Atoms.TextContent size='xsmLight'>
-            {classType}
+            {SEGMENT[segment]}
             {' / '}
-            {fuelType}
+            {FUELTYPE[fuelType]}
           </Atoms.TextContent>
           <Atoms.TextContent size='xsmLight'>
-            {`월 ${amount} 원 부터`}
+            {`월 ${addCommas(amount)} 원 부터`}
           </Atoms.TextContent>
         </>
       }

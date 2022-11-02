@@ -3,10 +3,12 @@ import React from 'react';
 import StyledCardItemLayout from './CardItemLayout.style';
 
 export default function CardItemLayout(props) {
-  const { children, onClick } = props;
+  const { to, children, onClick } = props;
 
   return (
-    <StyledCardItemLayout onClick={onClick}>{children}</StyledCardItemLayout>
+    <StyledCardItemLayout to={to} onClick={onClick}>
+      {children}
+    </StyledCardItemLayout>
   );
 }
 
