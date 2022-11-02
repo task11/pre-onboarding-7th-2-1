@@ -18,5 +18,5 @@ export default function BackButton(props) {
 BackButton.defaultProps = {
   to: '/',
   size: SIZES.md,
-  onClick: () => { }
+  onClick: () => {}
 };

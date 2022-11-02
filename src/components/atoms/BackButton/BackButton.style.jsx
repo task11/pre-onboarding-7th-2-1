@@ -16,7 +16,7 @@ export const StyledBackButton = styled(IoMdArrowBack)`
 `;
 
 export const StyledLink = styled(Link)`
-  &:visited{
+  &:visited {
     color: ${(props) => props.theme.textColor.default};
   }
 `;
