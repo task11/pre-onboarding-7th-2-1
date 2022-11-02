@@ -6,7 +6,8 @@ const StyledCardItemLayout = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: ${(props) => props.theme.border.default};
+  border-bottom: 1px solid ${(props) => props.theme.border.default};
+  padding: 20px;
   cursor: pointer;
 `;
 

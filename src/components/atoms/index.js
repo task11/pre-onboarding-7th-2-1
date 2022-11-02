@@ -9,6 +9,7 @@ import ListTitleLayout from './ListTitleLayout/ListTitleLayout';
 import InfoLayout from './InfoLayout/InfoLayout';
 import CardItemLayout from './CardItemLayout/CardItemLayout';
 import CardTitleLayout from './CardTitleLayout/CardTitleLayout';
+import CategoriesLayout from './CategoriesLayout/CategoriesLayout';
 
 export default {
   Button,
@@ -21,5 +22,6 @@ export default {
   ListTitleLayout,
   InfoLayout,
   CardItemLayout,
-  CardTitleLayout
+  CardTitleLayout,
+  CategoriesLayout
 };
