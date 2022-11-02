@@ -14,7 +14,7 @@ export function formatDate(string) {
   };
 
   const date = new Date(string).toLocaleDateString('ko-KR', options).split(' ');
-  console.log(date);
+
   return `${date[0]} ${date[1]} (${date[2][0]})`;
 }
 

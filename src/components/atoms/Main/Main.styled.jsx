@@ -10,7 +10,6 @@ const StyledMain = styled.div`
   @media only screen and (min-width: 768px) {
     width: 500px;
   }
-  
 `;
 
 export default StyledMain;
