@@ -12,7 +12,7 @@ const Router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/'>
       <Route index element={<Pages.HomePage />} />
-      <Route path='detail' element={<Pages.DetailPage />} />
+      <Route path='detail/:detailId' element={<Pages.DetailPage />} />
     </Route>
   )
 );
