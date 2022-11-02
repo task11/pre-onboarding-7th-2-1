@@ -6,7 +6,7 @@ export default function DetailHeader() {
   return (
     <Atoms.Header>
       <Atoms.TextContent size='md'>차량상세</Atoms.TextContent>
-      <Atoms.BackButton />
+      <Atoms.BackButton to='/' />
     </Atoms.Header>
   );
 }

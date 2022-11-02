@@ -4,18 +4,18 @@ import Atoms from '../atoms';
 import Molecules from '../molecules';
 
 export default function CardItem(props) {
-  const { brand, name, classType, fuelType, amount, imageURL } = props;
+  const { id, brand, name, segment, fuelType, amount, imageUrl } = props;
 
   return (
-    <Atoms.CardItemLayout>
+    <Atoms.CardItemLayout to={`/detail/${id}`}>
       <Molecules.CardTitle
         brand={brand}
         name={name}
-        classType={classType}
+        segment={segment}
         fuelType={fuelType}
         amount={amount}
       />
-      <Atoms.Image src={imageURL} size='sm' alt={`the car ${name}'s image`} />
+      <Atoms.Image src={imageUrl} size='sm' alt={`the car ${name}'s image`} />
     </Atoms.CardItemLayout>
   );
 }
