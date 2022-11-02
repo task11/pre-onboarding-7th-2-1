@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const StyledListHeader = styled.div`
+const StyledListHeaderLayout = styled.div`
   width: 100%;
   height: 48px;
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: ${(props) => props.theme.bgColor.accent};
+  padding: 20px;
 `;
 
-export default StyledListHeader;
+export default StyledListHeaderLayout;

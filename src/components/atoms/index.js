@@ -3,8 +3,12 @@ import TextContent from './TextContent/TextContent';
 import Image from './Image/Image';
 import BackButton from './BackButton/BackButton';
 import Header from './Header/Header';
-import ListHeader from './ListHeader/ListHeader';
-import ListItem from './ListItem/ListItem';
+import ListHeaderLayout from './ListHeaderLayout/ListHeaderLayout';
+import ListItemLayout from './ListItemLayout/ListItemLayout';
+import ListTitleLayout from './ListTitleLayout/ListTitleLayout';
+import InfoLayout from './InfoLayout/InfoLayout';
+import CardItemLayout from './CardItemLayout/CardItemLayout';
+import CardTitleLayout from './CardTitleLayout/CardTitleLayout';
 
 export default {
   Button,
@@ -12,6 +16,10 @@ export default {
   Image,
   BackButton,
   Header,
-  ListHeader,
-  ListItem
+  ListHeaderLayout,
+  ListItemLayout,
+  ListTitleLayout,
+  InfoLayout,
+  CardItemLayout,
+  CardTitleLayout
 };
