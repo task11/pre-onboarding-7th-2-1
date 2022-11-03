@@ -2,6 +2,7 @@ import React from 'react';
 
 import { ThemeProvider } from 'styled-components';
 import { RouterProvider } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import { CarProvider } from './context/CarProvider';
 
 import Router from './router';
@@ -15,7 +16,9 @@ export default function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <CarProvider>
-        <RouterProvider router={Router} />
+        <HelmetProvider>
+          <RouterProvider router={Router} />
+        </HelmetProvider>
       </CarProvider>
     </ThemeProvider>
   );
