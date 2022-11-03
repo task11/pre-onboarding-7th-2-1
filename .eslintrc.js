@@ -33,6 +33,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'implicit-arrow-linebreak': 'off',
     'react/jsx-no-useless-fragment': 'off',
-    'react/no-array-index-key': 'off'
+    'react/no-array-index-key': 'off',
+    'no-console': ['error', { allow: ['warn', 'error'] }]
   }
 };
